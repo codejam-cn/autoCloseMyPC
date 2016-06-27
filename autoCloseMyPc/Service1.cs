@@ -30,7 +30,7 @@ namespace autoCloseMyPc
 
         }
 
-        protected override void OnStop()
+        protected override void OnStop() 
         {
         }
 

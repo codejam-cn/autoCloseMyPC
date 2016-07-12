@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 using System.ServiceProcess;
 using System.Timers;
+using System.Xml.Linq;
 
 namespace autoCloseMyPc
 {
@@ -25,6 +27,11 @@ namespace autoCloseMyPc
 
         protected void ShutDownMyPc(object sender, ElapsedEventArgs e)
         {
+            XDocument doc = XDocument.Load("Settings.xml");
+            var weekdays = from p in doc.Descendants("activeWeekday")
+                select p.Value;
+
+
             var hour = e.SignalTime.Hour;
             var min = e.SignalTime.Minute;
             var dayofWeek = e.SignalTime.DayOfWeek;

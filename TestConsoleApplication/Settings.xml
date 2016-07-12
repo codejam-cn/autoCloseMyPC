@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autoCloseMyPcSettingXml>
+  <weekday>
+    <activeWeekday>0</activeWeekday>
+    <activeWeekday>1</activeWeekday>
+    <activeWeekday>2</activeWeekday>
+    <activeWeekday>3</activeWeekday>
+    <activeWeekday>4</activeWeekday>
+  </weekday>
+  <time>
+    <hour>0</hour>
+    <minute>20</minute>
+    <second>0</second>
+  </time>
+
+</autoCloseMyPcSettingXml>

@@ -27,7 +27,7 @@ namespace TestConsoleApplication
             List<int> days = weekdays.ToList().Select(int.Parse).ToList();
 
 
-            Resource1.psb
+            
 
             var hour = from p in doc.Descendants("hour")
                            select p.Value;

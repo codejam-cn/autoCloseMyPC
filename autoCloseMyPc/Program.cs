@@ -7,13 +7,13 @@ namespace autoCloseMyPc
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        static void Main()
+        private static void Main()
         {
-            var ServicesToRun = new ServiceBase[] 
+            var servicesToRun = new ServiceBase[] 
             { 
                 new Service1() 
             };
-            ServiceBase.Run(ServicesToRun);
+            ServiceBase.Run(servicesToRun);
         }
     }
 }

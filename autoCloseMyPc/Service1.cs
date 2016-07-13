@@ -46,7 +46,7 @@ namespace autoCloseMyPc
                     myPro.StartInfo.RedirectStandardError = true;
                     myPro.StartInfo.CreateNoWindow = true;
                     myPro.Start();
-                    string str = @"shutdown -f -s -t 300";
+                    const string str = @"shutdown -f -s -t 300";
                     myPro.StandardInput.WriteLine(str);
                     myPro.StandardInput.AutoFlush = true;
                     myPro.WaitForExit();

@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autoCloseMyPc", "autoCloseMyPc\autoCloseMyPc.csproj", "{0E4F7247-6D1F-473D-A176-4005887C55DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApplication", "TestConsoleApplication\TestConsoleApplication.csproj", "{88C57A97-793D-4DDC-8128-6731AB6BE095}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E4F7247-6D1F-473D-A176-4005887C55DC} = {0E4F7247-6D1F-473D-A176-4005887C55DC}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

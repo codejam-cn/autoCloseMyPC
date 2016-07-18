@@ -37,8 +37,20 @@ namespace TestConsoleApplication
                        select p.Value;
             int minInt = int.Parse(min.First());
 
-            Console.WriteLine(minInt);
-            Console.ReadLine();
+            string txtFileName = DateTime.Now.ToString("hhmmssffffff") + ".txt";
+            string filePath = Path.Combine(parentPath1, txtFileName);
+
+            StreamWriter sw = new StreamWriter(filePath);
+            string content = minInt.ToString();
+
+            sw.Write(content);
+            sw.Close();
+            sw.Dispose();
+
+
+
+//            Console.WriteLine(minInt);
+//            Console.ReadLine();
         }
     }
 }

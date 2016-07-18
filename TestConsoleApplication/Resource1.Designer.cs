@@ -93,15 +93,5 @@ namespace TestConsoleApplication {
                 return ResourceManager.GetString("Settings", resourceCulture);
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt; 
-        ///.
-        /// </summary>
-        internal static string XMLFile1 {
-            get {
-                return ResourceManager.GetString("XMLFile1", resourceCulture);
-            }
-        }
     }
 }

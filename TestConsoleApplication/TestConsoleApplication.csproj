@@ -61,7 +61,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="XMLFile1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\psb.jpg" />
   </ItemGroup>

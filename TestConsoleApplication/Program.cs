@@ -49,8 +49,8 @@ namespace TestConsoleApplication
 
 
 
-//            Console.WriteLine(minInt);
-//            Console.ReadLine();
+            Console.WriteLine(filePath);
+            Console.ReadLine();
         }
     }
 }

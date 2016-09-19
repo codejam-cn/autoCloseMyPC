@@ -25,7 +25,7 @@ namespace autoCloseMyPc
         {
         }
 
-        protected void ShutDownMyPc(object sender, ElapsedEventArgs e)
+        public static void ShutDownMyPc(object sender, ElapsedEventArgs e)
         {
             XDocument doc = XDocument.Load("Settings.xml");
             var weekdays = from p in doc.Descendants("activeWeekday")

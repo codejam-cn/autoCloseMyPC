@@ -35,7 +35,7 @@ namespace autoCloseMyPc
             var hour = e.SignalTime.Hour;
             var min = e.SignalTime.Minute;
             var dayofWeek = e.SignalTime.DayOfWeek;
-            if (hour == 0 && min >= 30 && dayofWeek >= (DayOfWeek)1 && dayofWeek <= (DayOfWeek)5)
+            if (hour == 0 && min >= 5 && dayofWeek >= (DayOfWeek)1 && dayofWeek <= (DayOfWeek)5)
             {
                 using (Process myPro = new Process())
                 {

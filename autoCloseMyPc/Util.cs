@@ -4,11 +4,15 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 
-namespace TestConsoleApplication
+/*
+ 这个文件暂时没用，什么都没做
+ */
+
+namespace autoCloseMyPc
 {
-    class Program
+    class Util
     {
-        static void Main(string[] args)
+        public void Util111()
         {
             string debugPath = Directory.GetCurrentDirectory(); //debug/
             string parentPath0 = Directory.GetParent(debugPath).FullName;
@@ -27,14 +31,14 @@ namespace TestConsoleApplication
             List<int> days = weekdays.ToList().Select(int.Parse).ToList();
 
 
-            
+
 
             var hour = from p in doc.Descendants("hour")
-                           select p.Value;
+                       select p.Value;
             int hourInt = int.Parse(hour.First());
 
             var min = from p in doc.Descendants("minute")
-                       select p.Value;
+                      select p.Value;
             int minInt = int.Parse(min.First());
 
             string txtFileName = DateTime.Now.ToString("hhmmssffffff") + ".txt";
@@ -51,6 +55,9 @@ namespace TestConsoleApplication
 
             Console.WriteLine(filePath);
             Console.ReadLine();
+            
         }
+
+         
     }
 }

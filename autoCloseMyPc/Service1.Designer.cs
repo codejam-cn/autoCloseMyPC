@@ -1,11 +1,17 @@
-﻿namespace autoCloseMyPc
+﻿using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Xml.Linq;
+using System.Xml.XPath;
+
+namespace autoCloseMyPc
 {
     partial class Service1
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -28,7 +34,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            components = new Container();
             this.ServiceName = "Service1";
         }
 
